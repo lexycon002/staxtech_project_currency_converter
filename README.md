@@ -28,8 +28,8 @@ This is a simple and interactive **Currency Converter** web app built with **Rea
 
 ### 📸 Screenshot
 
-![ Project snipshot]("buildingStage.png")
-![ Project snipshot]("finalProduct.png")
+![ Project snipshot]("./buildingStage.png")
+![ Project snipshot]("./finalProduct.png")
 
 
 
