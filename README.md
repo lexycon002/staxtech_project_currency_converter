@@ -26,10 +26,10 @@ This is a simple and interactive **Currency Converter** web app built with **Rea
 
 
 
-### 📸 Screenshot
+### 📸 Building and Final Snipshot
 
-![ Project snipshot]("./buildingStage.png")
-![ Project snipshot]("./finalProduct.png")
+![ Building Stage snipshot](./buildingStage.png)
+![ Final Stage snipshot](./finalProduct.png)
 
 
 
