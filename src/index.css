@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+    font-family: "Red Rose", serif;
+    scrollbar-width: thin;
+    scrollbar-color: #888 transparent;
+}
+body {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: white;
+}
+#root {
+    width: 100%;
+}
+.currency-converter {
+    max-width:400px;
+    min-height: 400px;
+    border-radius: 8px;
+    margin:0 auto;
+    padding: 35px 25px 45px;
+    backdrop-filter:blur(30px);
+    background: rgb(9, 71, 185);
+    box-shadow: 2px 10px rgb(9, 71, 185);
+}
+
+.currency-converter .converter-title {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+    
+}
+.currency-converter .converter-form {
+    margin-top: 40px;
+}
+.converter-form .form-group {
+    display: flex;
+    margin-bottom: 30px;
+    flex-direction: column;
+}
+.converter-form .form-group .form-label {
+    color: white;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 7px;
+    font-size: 1.1rem;
+}
+.converter-form .form-group .form-input {
+    min-height: 45px;
+    border-radius: 5px;
+    background: rgba(156, 161, 161, 0.3);
+    border: 1px solid rgb(9, 71, 185);
+    outline: none;
+    color: white;
+    font-size: 1.1rem;
+    padding: 0px 15px;
+}
+.converter-form .form-currency-group {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.form-currency-group .currency-select {
+    display: flex;
+    align-items: center;
+    min-height: 40px;
+    padding: 0 8px;
+    border-radius: 6px;
+    background: rgba(156, 161, 161, 0.3);
+    border: 1px solid (rgb(9, 71, 185));
+}
+.form-currency-group .currency-select img {
+    width: 27px;
+    margin-right: 5px;
+}
+.form-currency-group .currency-select .currency-dropdown {
+    outline: none;
+    border: none;
+    background: none;
+    color: white;
+    font-weight: 500;
+    padding: 0px 10px 0px 5px;
+}
+
+.form-currency-group .currency-select .currency-dropdown option {
+    color:wheat;
+    font-weight: 600;
+}
+.form-currency-group .swap-icon {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(156, 161, 161, 0.3);
+    border: 1px solid rgb(9, 71, 185);
+    margin-top: 25px;
+    transition: 0.3s ease;
+}
+.form-currency-group .swap-icon:hover {
+    background: rgba(156, 161, 161, 0.3);
+}
+.converter-form .submit-button {
+    width:100%;
+    min-height: 50px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.converter-form .submit-button.loading {
+    opacity: 0.8;
+    pointer-events: none;
+}
+.converter-form .submit-button:hover {
+    background: rgba(156, 161, 161, 0.3);
+    color: white;
+}
+.converter-form .exchange-rate-result {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 28px 0;
+    margin-top: 32px;
+    background: rgba(156, 161, 161, 0.3);
+    letter-spacing: 0.8px;
+}
+
+/* Thin scrollbar for Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(133, 165, 224);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+@media screen and ( max-width:400px) {
+    .currency-converter {
+        max-width: 350px;
+    }
+}
+@media screen and ( max-width:360px) {
+    .currency-converter {
+        max-width: 300px;
+    }
+    .currency-converter .converter-title {
+        font-size: 1.2rem;
+    }
+    .form-currency-group .currency-select {
+        padding: 5px 0px;
+    }
+    .converter-form .submit-button {
+        font-size: 0.95rem;
+    }
+    .converter-form .exchange-rate-result {
+        font-size: 0.95rem;
+        padding: 22px 0;
+    }
+}
