@@ -161,7 +161,7 @@ body {
 }
 @media screen and ( max-width:360px) {
     .currency-converter {
-        max-width: 300px;
+        max-width: 320px;
     }
     .currency-converter .converter-title {
         font-size: 1.2rem;
