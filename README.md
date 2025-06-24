@@ -1,7 +1,3 @@
-Great job completing your currency converter project! 🎉 Here's a professional and engaging **README.md** write-up you can use or tweak for GitHub, your portfolio, or anywhere else you showcase your work:
-
-
-
 ## 💱 Currency Converter App
 
 This is a simple and interactive **Currency Converter** web app built with **React.js**. It allows users to convert between different currencies using **real-time exchange rates** fetched from an external API. The app also displays the flags of the selected countries for a more personalized experience.
